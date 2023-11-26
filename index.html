@@ -1,90 +1,194 @@
-<link rel="stylesheet" type="text/css" href="design.css">
-<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="design.css">
+   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+   <script>
+       var languages = {
+ "en": {
+  "iOS Developer": "iOS Developer",
+  "Technical Skills": "Technical Skills",
+  "name": "Eugene Rozhkov",
+  "location": "Tokyo, Seibu Shinjuku Line",
+  "email": "EuKovs@gmail.com",
+  "github": "https://github.com/kovs705",
+  "experienceTime": "Summer 2023 - Present",
+  "companyName":"Reshenie, llc.",
+  "positionName":"iOS App Developer",
+  "skills": "Engineered and optimized multiple Kotlin Multiplatform (KMP) projects for healthcare organizations, leveraging SwiftUI and UIKit. Specialized in the creation of seamless integrations between Kotlin and Swift code by connecting with Android and Web developers.",
+  "Natural Languages":"Natural Languages",
+  "language1":"Russian",
+  "language2":"English",
+  "language3":"Japanese",
+  "language4":"Finnish",
+  "level1":"Native",
+  "level2":"Advanced",
+  "level3":"Intermediate",
+  "level4":"Beginner",
+  "interest1": "Guitar",
+  "interest2": "Bass guitar",
+  "interest3": "Piano",
+  "interest4": "Song Writing",
+  "interest5": "Personal app projects",
+  "interest6": "Natural languages",
+  "interest7": "Writing IT articles",
+  "interest8": "Reading books",
+  "handmade1": "handmade by <em> Eugene Rozhkov</em>",
+  "handmade2": "Email: <em> EuKovs@gmail.com</em>",
+  "handmade3": "My Telegram <em> T.me/Kovs705</em>"
+ },
+ "ru": {
+    "iOS Developer": "iOS разработчик",
+  "Technical Skills": "Technical Skills",
+  "name": "Eugene Rozhkov",
+  "location": "Tokyo, Seibu Shinjuku Line",
+  "email": "EuKovs@gmail.com",
+  "github": "https://github.com/kovs705",
+  "experienceTime": "Лето 2023 - Настоящее время",
+  "companyName":"ООО Решение",
+  "positionName":"iOS Разработчик",
+  "skills": "Engineered and optimized multiple Kotlin Multiplatform (KMP) projects for healthcare organizations, leveraging SwiftUI and UIKit. Specialized in the creation of seamless integrations between Kotlin and Swift code by connecting with Android and Web developers.",
+  "Natural Languages":"Естественные языки",
+  "language1":"Русский",
+  "language2":"Английский",
+  "language3":"Японский",
+  "language4":"Финский",
+  "level1":"Родной язык",
+  "level2":"Продвинутый",
+  "level3":"Средний",
+  "level4":"Базовый",
+  "interest1": "Игра на гитаре",
+  "interest2": "Бас-гитара",
+  "interest3": "Пианино",
+  "interest4": "Сочинение песен",
+  "interest5": "Написание pet-проектов",
+  "interest6": "Изучение естественных языков",
+  "interest7": "Написание IT статей",
+  "interest8": "Чтение литературы",
+  "handmade1": "handmade by <em> Eugene Rozhkov</em>",
+  "handmade2": "Email: <em> EuKovs@gmail.com</em>",
+  "handmade3": "My Telegram <em> T.me/Kovs705</em>"
+ },
+ "jp": {
+    "iOS Developer": "iOS エンジニア",
+  "Technical Skills": "技術的なスキル",
+  "name": "ユジン  ロジコブ",
+  "location": "東京・西武新宿線",
+  "email": "EuKovs@gmail.com",
+  "github": "https://github.com/kovs705",
+  "experienceTime": "夏 2023 - 今",
+  "companyName":"Reshenie, llc.",
+  "positionName":"iOS アプリ エンジニア",
+  "skills": "Engineered and optimized multiple Kotlin Multiplatform (KMP) projects for healthcare organizations, leveraging SwiftUI and UIKit. Specialized in the creation of seamless integrations between Kotlin and Swift code by connecting with Android and Web developers.",
+  "Natural Languages":"Natural Languages",
+  "language1": "ロシア語",
+  "language2": "英語", 
+  "language3": "日本語",
+  "language4": "フィンランド語",
+  "level1": "母語",
+  "level2": "上級",
+  "level3": "中級",
+  "level4": "初級",
+  "interest1": "ギター",
+  "interest2": "ベースギター",
+  "interest3": "ピアノ",
+  "interest4": "曲調作成",
+  "interest5": "個人アプリプロジェクト",
+  "interest6": "自然言語",
+  "interest7": "IT記事の作成",
+  "interest8": "本を読む",
+  "handmade1": "handmade by <em> Eugene Rozhkov</em>",
+  "handmade2": "Email: <em> EuKovs@gmail.com</em>",
+  "handmade3": "My Telegram <em> T.me/Kovs705</em>"
+ }
+};
 
-<div class="wrapper clearfix">
-  <div class="left">
+       function changeLanguage(lang) {
+           var elements = document.querySelectorAll('[data-lang]');
 
-    <div class="name-hero">
+           elements.forEach(function(element) {
+               var key = element.getAttribute('data-lang');
+               var text = languages[lang][key];
+               element.textContent = text;
+           });
+       }
 
-      <div class="me-img"></div>
-
-      <div class="name-text">
-
-        <h1>Eugene <em>Rozhkov</em></h1>
-        <p>Tokyo, Seibu Shinjuku Line</p>
-        <p>EuKovs@gmail.com</p>
-        <p>https://github.com/kovs705</p>
-
-      </div>
-
-    </div>
-
-  </div>
-  <div class="right">
-
-    <div class="inner">
-      <section>
-        <h1>iOS Developer</h1>
-        <p>Summer 2023 - Present | <em>Reshenie, llc. | iOS App Developer</em></p>
-        <p>Engineered and optimized multiple Kotlin Multiplatform (KMP) projects for healthcare organizations, leveraging SwiftUI and UIKit. Specialized in the creation of seamless integrations between 
-          Kotlin and Swift code by connecting with Android and Web developers.</p>
-        
-        <p>Spring 2022 - Fall 2022 | <em>Individual Entrepreneur | Contract iOS Developer</em></p>
-        <p>Led the modernization of a proprietary application for individual entrepreneurs, focusing on transport status management in the logistics sector. 
-          Delivered SwiftUI components into UIKit app. Helped small businesses run their operations without needing a PC</p>
-        
-        <p>Winter 2023 | <em>Open-Source Spotify client app | Lead iOS Developer</em></p>
-        <p>Managed all technical aspects, including the maintenance and development of the backend to function independently from Spotify, without using iOS Spotify SDK. </p>
-      </section>
-      <section>
-        <h1>Technical Skills</h1>
-        <ul class="skill-set">
-          <li>iOS Development (UIKit, SwiftUI)</li>
-          <li>Kotlin Multiplatform</li>
-          <li>MVP, MVI, MVVM</li>
-          <li>Combine / StateFlow</li>
-          <li>Kotlin</li>
-          <li>Minimum viable product</li>
-          <li>AppleScript</li>
-          <li>XCodeGen</li>
-          <li>Complex UI components</li>
-          <li>HIG / Material Design 3</li>
-          <li>ViewController / MainActivity</li>
-        </ul>
-      </section>
-      <section>
-        <h1>Natural Languages</h1>
-        <p>Russian - <em>Native</em></p>
-        
-        <p>English - <em>Advanced</em></p>
-        <p>  \Used to work as a tutor</p>
-        <p>Japanese - <em>Intermediate</em></p>
-        <p>  \Develop knowledge and learn almost every day</p>
-        <p>Finnish - <em>Beginner</em></p>
-        <p>  \Learned quite a long time ago, but ended up only with a good fundamental knowledge</p>
-      </section>
-      <section>
-        <h1>Personal Interests</h1>
-        <ul class="skill-set">
-          <li>Guitar</li>
-          <li>Bass guitar</li>
-          <li>Piano</li>
-          <li>Song Writing</li>
-          <li>Personal app projects</li>
-          <li>Natural languages</li>
-          <li>Writing IT articles</li>
-          <li>Reading books</li>
-        </ul>
-      </section>
-      <section>
-        <div class="handmade">
-          <p>handmade by <em> Eugene Rozhkov</em></p>
-          <p>Email: <em> EuKovs@gmail.com</em></p>
-          <p>My Telegram <em> T.me/Kovs705</em></p>
-        </div>
-      </section>
-    </div>
-
-  </div>
-
-</div>
+       document.addEventListener('DOMContentLoaded', function() {
+           var lang = navigator.language || navigator.userLanguage;
+           changeLanguage(lang);
+       });
+   </script>
+</head>
+<body>
+   <div class="wrapper clearfix">
+       <div class="left">
+           <div class="name-hero">
+               <div class="me-img"></div>
+               <div class="name-text">
+                  <h1 data-lang="name">Eugene <em>Rozhkov</em></h1>
+                  <p data-lang="location">Tokyo, Seibu Shinjuku Line</p>
+                  <p data-lang="email">EuKovs@gmail.com</p>
+                  <p data-lang="github">https://github.com/kovs705</p>
+               <button onclick="changeLanguage('en')">English</button>
+               <button onclick="changeLanguage('ru')">Russian</button>
+               <button onclick="changeLanguage('jp')">Japanese</button>
+               </div>
+           </div>
+       </div>
+       <div class="right">
+           <div class="inner">
+               <section>
+                  <h1 data-lang="iOS Developer">iOS Developer</h1>
+                  <p data-lang="experienceTime">Summer 2023 - Present | <em data-lang="companyName">Reshenie, llc. |</em><em data-lang="positionName"> iOS App Developer</em></p>
+                  <p data-lang="skills">Engineered and optimized multiple Kotlin Multiplatform (KMP) projects for healthcare organizations, leveraging SwiftUI and UIKit. Specialized in the creation of seamless integrations between Kotlin and Swift code by connecting with Android and Web developers.</p>
+               </section>
+               <section>
+                  <h1 data-lang="Technical Skills">Technical Skills</h1>
+                  <ul class="skill-set">
+                      <li data-lang="skill1">iOS Development (UIKit, SwiftUI)</li>
+                      <li data-lang="skill2">Kotlin Multiplatform</li>
+                      <li data-lang="skill3">MVP, MVI, MVVM</li>
+                      <li data-lang="skill4">Combine / StateFlow</li>
+                      <li data-lang="skill5">Kotlin</li>
+                      <li data-lang="skill6">Minimum viable product</li>
+                      <li data-lang="skill7">AppleScript</li>
+                      <li data-lang="skill8">XCodeGen</li>
+                      <li data-lang="skill9">Complex UI components</li>
+                      <li data-lang="skill10">HIG / Material Design 3</li>
+                      <li data-lang="skill11">ViewController / MainActivity</li>
+                  </ul>
+               </section>
+               <section>
+                  <h1 data-lang="Natural Languages">Natural Languages</h1>
+                  <p>Russian - <em>Native</em></p>
+                  <p data-lang="experienceTime">Summer 2023 - Present | <em data-lang="companyName">Reshenie, llc. |</em><em data-lang="positionName"> iOS App Developer</em></p>
+                  <!-- <p data-lang="language1">Russian - <em data-lang="level1">Native</em></p> -->
+                  <p data-lang="language2">English - <em data-lang="level2">Advanced</em></p>
+                  <p data-lang="language3">Japanese - <em data-lang="level3">Intermediate</em> </p>
+                  <p data-lang="language4">Finnish - <em data-lang="level4">Beginner</em> </p>
+               </section>
+               <section>
+                  <h1 data-lang="Personal Interests">Personal Interests</h1>
+                  <ul class="skill-set">
+                      <li data-lang="interest1">Guitar</li>
+                      <li data-lang="interest2">Bass guitar</li>
+                      <li data-lang="interest3">Piano</li>
+                      <li data-lang="interest4">Song Writing</li>
+                      <li data-lang="interest5">Personal app projects</li>
+                      <li data-lang="interest6">Natural languages</li>
+                      <li data-lang="interest7">Writing IT articles</li>
+                      <li data-lang="interest8">Reading books</li>
+                  </ul>
+               </section>
+               <section>
+                  <div class="handmade">
+                      <p data-lang="handmade1">handmade by <em> Eugene Rozhkov</em></p>
+                      <p data-lang="handmade2">Email: <em> EuKovs@gmail.com</em></p>
+                      <p data-lang="handmade3">My Telegram <em> T.me/Kovs705</em></p>
+                  </div>
+               </section>
+           </div>
+       </div>
+   </div>
+ </body>
+ </html>
