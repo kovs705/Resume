@@ -1,34 +1,39 @@
 *, *:before, *:after {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
    }
-   
-   html {
+  
+  html
+  {
       font-size:100%;
-   }
-   
-   body {
+  }
+  
+  body {
       -webkit-font-smoothing:antialiased;
       color:#333332;
-      font-family:Lora, serif;
+      font-family: Lora, normal;
       font-size:18px;
       font-weight:400;
       line-height:1.4;
       text-rendering:optimizeLegibility;
-   }
-   
-   .skill-set li:hover {
+  }
+  
+  .skill-set li:hover
+  {
       background:#3498db;
-   }
-   
-   h1 {
+  }
+  
+  h1
+  {
       color:rgba(0,0,0,.75);
-   }
-   
-   .wrapper {
+  }
+  
+  .wrapper
+  {
       height:100%;
-   }
-   
-   .left {
+  }
+  
+  .left
+  {
       background-color:rgba(0,0,0,.025);
       border-right:1px solid rgba(0,0,0,.05);
       float:right;
@@ -37,16 +42,20 @@
       min-width:256px;
       position:fixed;
       width:33.33%;
-   }
-   
-   .right {
+    
+  }
+  
+  .right
+  {
       float:right;
       height:100%;
       position:relative;
       width:66.66%;
-   }
-   
-   .name-hero {
+  }
+  
+  
+  .name-hero
+  {
       background:rgba(0,0,0,.001);
       bottom:0;
       height:290px;
@@ -56,90 +65,84 @@
       right:0;
       top:0;
       width:85%;
-   }
-   
-   .me-img {
+  }
+  
+  .me-img {
       background:url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58) no-repeat center center ;
       background-size:100%;
-      background-position:0px;
+    background-position:0px;
       border-radius:100%;
       height:150px;
       margin:0 auto;
       position:relative;
       width:150px;
-   }
-   
-   .name-hero h1 {
+  }
+  
+  .name-hero h1
+  {
       font-family:Open Sans, sans-serif;
       font-size:1.5em;
       text-align:center;
-   }
-   
-   .name-hero h1 em {
-      color:black;
+  }
+  
+  .name-hero h1 em
+  {
+      color:rgba(0,0,0,.3);
       font-style:normal;
       font-weight:700;
-   }
-   
-   .name-hero p {
+  }
+  
+  .name-hero p
+  {
       color:rgba(0,0,0,.75);
       font-size:.75em;
       line-height:1.5;
       margin:0 8px 0 0;
       text-align:center;
-   }
-
-   .name-hero em {
-      color: black !important;
-   }
-
-   .name-hero em[data-lang] {
-      color: black !important;
-   }
-   
-   .name-hero .name-text {
+  }
+  
+  .name-hero .name-text
+  {
       margin:0 auto;
       width:85%;
-   }
-   
-   .inner {
+  }
+  
+  .inner
+  {
       margin:0 auto;
       max-width:975px;
       padding:3em;
-   }
-   
-   .inner h1 {
+  }
+  
+  .inner h1
+  {
       font-size:1.75em;
-   }
-
-   em {
-      color: black;
-   }
-
-   p {
-      color: rgba(0,0,0,.5);
-   }
-
-   p[data-lang] {
-      color: rgba(0,0,0,.5);
-   }
-
-   em[data-lang] {
-      color: black Im !important;
-   }
-   
-   .inner section {
+  }
+  
+  .inner p
+  {
+      color:rgba(0,0,0,.5);
+  }
+  
+  .inner p em
+  {
+      color:rgba(0,0,0,1);
+      font-style:normal;
+  }
+  
+  .inner section {
       margin:100px auto;
-   }
-   
-   ul {
+  }
+  
+  ul {
       list-style-type:none;
       margin-top:-10px;
       max-width:570px;
       padding:0;
-   }
-   
-   .skill-set li {
+  }
+  
+  .skill-set li
+  {
       background:rgba(0,0,0,.75);
       border-radius:5px;
       color:#FFF;
@@ -148,10 +151,11 @@
       margin:15px 15px 0 0;
       padding:10px;
       text-align:justify;
-   }
-   
-   @media screen and (max-width: 48em) {
-      .right,.left {
+  }
+  
+  @media screen and (max-width: 48em) {
+      .right,.left
+      {
           float:none;
       position:relative !important;
           width:100%;
@@ -160,44 +164,37 @@
     .handmade {
     text-align:center !important;
     margin-top:0px !important;
-   }
-   
-   @media screen and (max-width: 75em) {
-      body { font-size:16px;}
-   }
-   
-   @media screen and (max-width: 60em) {
-      body { font-size:14px;}
-   }
-   .clearfix:after {
+  }
+  
+  @media screen and (max-width: 75em) {
+      body
+  { font-size:16px;}
+  }
+  
+  @media screen and (max-width: 60em) {
+      body { font-size:14px; }
+  }
+
+  .clearfix:after {
      content: " "; /* Older browser do not support empty content */
      visibility: hidden;
      display: block;
      height: 0;
      clear: both;
-   }
-   .handmade {
+  }
+
+  .handmade {
     text-align:right;
     margin-top:100px;
-   }
-   .handmade em {
-    font-family: 'Shadows Into Light', cursive;
+  }
+
+  em[data-lang] {
+    font-family: 'Shadows Into Light', normal;
+  }
+
+  .handmade em {
+    font-family: 'Shadows Into Light', normal;
     font-size: 1.25em;
     margin-left:5px;
-   }
-   
-   /* Floating button */
-   .floating-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 20px;
-      font-size: 16px;
-      cursor: pointer;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-   }
+  }
 }
