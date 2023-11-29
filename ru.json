@@ -1,0 +1,48 @@
+{
+  "iOS Developer": "iOS разработчик",
+  "name": "Евгений Рожков",
+  "location": "Tokyo, Seibu Shinjuku Line",
+  "email": "EuKovs@gmail.com",
+  "github": "https://github.com/kovs705",
+  
+  "reshenieExperience": "Лето 2023 - Настоящее время | ",
+  "reshenieName":"Reshenie, llc. |",
+  "resheniePositionName":" iOS App Developer",
+  "reshenie":"Разработал и оптимизировал несколько KMP проектов для медицинских организаций, используя SwiftUI и UIKit. В процессе разработки изучил не только Kotlin, но и внедрил SwiftLint для установки общих правил написания кода, а также XcodeGen для избегания merge conflicts.",
+
+  "interExp":"Весна 2022 - Осень 2022 | ",
+  "interName":"ИП | ",
+  "interPositionName":"Contract iOS Developer",
+  "inter":"Модернизировал приложение для индивидуальных предпринимателей в логистической сфере, предназначенное для контроля статуса перевозки груза. Внедрил SwiftUI компоненты в UIKit приложение. Помог маломму бизнесу перенести часть функционала с компьютера на телефон.",
+
+  "openExp":"Лето 2023 | ",
+  "openName":"Open-Source Spotify client app | ",
+  "openPositionName":"iOS Developer",
+  "open":"Контролировал технические аспекты приложения, в том числе занимался разработкой backend части приложения для работы с Spotify, независимо от основного приложения (не iOS Spotify SDK).",
+
+  "Technical Skills": "Технические скиллы",
+
+  "Natural Languages":"Естественные языки",
+  "language1":"Русский",
+  "language2":"Английский",
+  "language3":"Японский",
+  "language4":"Финский",
+  "level1":"Родной язык",
+  "level2":"Продвинутый",
+  "level3":"Средний",
+  "level4":"Базовый",
+  "interest1": "Игра на гитаре",
+  "interest2": "Бас-гитара",
+  "interest3": "Пианино",
+  "interest4": "Сочинение песен",
+  "interest5": "Написание pet-проектов",
+  "interest6": "Изучение естественных языков",
+  "interest7": "Написание IT статей",
+  "interest8": "Чтение литературы",
+  "handmade": "Сайт написан: ",
+  "author":"Евгением Рожковым",
+  "myEmail": "Почта для связи: ",
+  "pochta":"EuKovs@gmail.com",
+  "myTelegram": "Мой Телеграм ",
+  "telegramLink":"T.me/Kovs705"
+ }

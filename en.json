@@ -1,0 +1,48 @@
+{
+    "iOS Developer": "iOS Developer",
+    "name": "Eugene Rozhkov",
+    "location": "Tokyo, Seibu Shinjuku Line",
+    "email": "EuKovs@gmail.com",
+    "github": "https://github.com/kovs705",
+  
+    "reshenieExperience": "Summer 2023 - Present | ",
+    "reshenieName":"Reshenie, llc. |",
+    "resheniePositionName":" iOS App Developer",
+    "reshenie": "Developed and optimized several KMP projects for medical organizations, using SwiftUI and UIKit. During the development process, I not only learned Kotlin, but also implemented SwiftLint to establish common coding rules, and XcodeGen to avoid merge conflicts.",
+  
+    "interExp":"Spring 2022 - Fall 2022 | ",
+    "interName":"Individual Entrepreneur | ",
+    "interPositionName":"Contract iOS Developer",
+    "inter":"Modernized an application for individual entrepreneurs in the logistics sector, designed for controlling the status of cargo transportation. Implemented SwiftUI components into a UIKit application. Helped a small business transfer part of the functionality from a computer to a phone.",
+  
+    "openExp":"Summer 2023 | ",
+    "openName":"Open-Source Spotify client app | ",
+    "openPositionName":"iOS Developer",
+    "open":"Managed the technical aspects of the application, including the development of the backend part of the application for working with Spotify, regardless of the main application (not iOS Spotify SDK).",
+
+    "Technical Skills": "Technical Skills",
+  
+    "Natural Languages":"Natural Languages",
+    "language1":"Russian",
+    "language2":"English",
+    "language3":"Japanese",
+    "language4":"Finnish",
+    "level1":"Native",
+    "level2":"Advanced",
+    "level3":"Intermediate",
+    "level4":"Beginner",
+    "interest1": "Guitar",
+    "interest2": "Bass guitar",
+    "interest3": "Piano",
+    "interest4": "Song Writing",
+    "interest5": "Personal app projects",
+    "interest6": "Natural languages",
+    "interest7": "Writing IT articles",
+    "interest8": "Reading books",
+    "handmade": "handmade by ",
+    "author":"Eugene Rozhkov",
+    "myEmail": "Email: ",
+    "pochta":"EuKovs@gmail.com",
+    "myTelegram": "My Telegram ",
+    "telegramLink":"T.me/Kovs705"
+   }
