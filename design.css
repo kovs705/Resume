@@ -141,16 +141,21 @@
       padding:0;
   }
   
-  .skill-set li
-  {
+  .skill-set li {
       background:rgba(0,0,0,.75);
-      border-radius:5px;
+      border-radius:10px;
       color:#FFF;
       display:inline-block;
       list-style:none;
       margin:15px 15px 0 0;
       padding:10px;
-      text-align:justify;
+      text-align:center;
+      text-decoration: none;
+  }
+
+  .skill-set li a {
+    text-decoration: none !important;
+    display: block;
   }
   
   @media screen and (max-width: 48em) {
@@ -196,5 +201,10 @@
     font-family: 'Shadows Into Light', normal;
     font-size: 1.25em;
     margin-left:5px;
+  }
+
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
   }
 }
