@@ -13,10 +13,10 @@ for (var i = 0; i < skillSetItems.length; i++) {
         this.style.backgroundColor = '';
     }
 
-    skillSetItems[i].onclick = function(e) {
-        var link = this.querySelector('a');
-        if (link) {
-            window.location = link.href;
-        }
-    }
+    // skillSetItems[i].onclick = function(e) {
+    //     var link = this.querySelector('a');
+    //     if (link) {
+    //         window.location = link.href;
+    //     }
+    // }
 }
