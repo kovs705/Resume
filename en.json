@@ -4,11 +4,16 @@
     "location": "Tokyo, Seibu Shinjuku Line",
     "email": "EuKovs@gmail.com",
     "github": "https://github.com/kovs705",
+
+    "lifetimeExp":"January 2024 - Present | ",
+    "lifetimeName":"Lifetime Health Plus Care Pvt Ltd | ",
+    "lifetimePositionName":"iOS App Developer",
+    "lifetime":"Developed, optimized and released iOS app for medical startup organization in India.",
   
     "reshenieExperience": "Summer 2023 - Present | ",
-    "reshenieName":"Reshenie, llc. |",
-    "resheniePositionName":" iOS App Developer",
-    "reshenie": "Developed and optimized several KMP projects for medical organizations, using SwiftUI and UIKit. During the development process, I not only learned Kotlin, but also implemented SwiftLint to establish common coding rules, and XcodeGen to avoid merge conflicts.",
+    "reshenieName":"Reshenie, llc. | ",
+    "resheniePositionName":"iOS App Developer",
+    "reshenie": "Developed several KMP projects for medical organizations in Russia. First - app for Optometrists on iPadOS. The second - Personal Cabinet for patients.",
   
     "interExp":"Spring 2022 - Fall 2022 | ",
     "interName":"Individual Entrepreneur | ",
