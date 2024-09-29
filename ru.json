@@ -1,29 +1,24 @@
 {
   "iOS Developer": "iOS разработчик",
   "name": "Евгений Рожков",
-  "location": "Tokyo, Seibu Shinjuku Line",
+  "location": "Город Накано, Токио, Япония",
   "email": "EuKovs@gmail.com",
   "github": "https://github.com/kovs705",
 
   "lifetimeExp":"Январь 2024 - Настоящее время | ",
   "lifetimeName":"Lifetime Health Plus Care Pvt Ltd | ",
-  "lifetimePositionName":"iOS App Developer",
-  "lifetime":"Разработал с нуля, оптимизировал и выпустил в релиз клиентское iOS приложение для медицинского стратапа в Индии.",
-  
-  "reshenieExperience":"Лето 2023 - Настоящее время | ",
+  "lifetimePositionName":"iOS разработчик",
+  "lifetime":"Разработал и выпустил в релиз клиентское iOS приложение для медицинского стратапа в Индии.",
+
+  "reshenieExperience":"Лето 2023 - Весна 2024 | ",
   "reshenieName":"Reshenie, llc. | ",
-  "resheniePositionName":"iOS App Developer",
+  "resheniePositionName":"iOS разработчик",
   "reshenie":"Разработал несколько KMP приложений для медицинских организаций в России. Первое - приложение для Оптометристов на iPadOS. Второе - Личный Кабинет пациента.",
 
   "interExp":"Весна 2022 - Осень 2022 | ",
   "interName":"ИП | ",
-  "interPositionName":"Contract iOS Developer",
+  "interPositionName":"Контрактный iOS разработчик",
   "inter":"Модернизировал приложение для индивидуальных предпринимателей в логистической сфере, предназначенное для контроля статуса перевозки груза. Внедрил SwiftUI компоненты в UIKit приложение. Помог малому бизнесу перенести часть функционала с компьютера на телефон.",
-
-  "openExp":"Лето 2023 | ",
-  "openName":"Open-Source Spotify client app | ",
-  "openPositionName":"iOS Developer",
-  "open":"Контролировал технические аспекты приложения, в том числе занимался разработкой backend части приложения для работы с Spotify, независимо от основного приложения (не iOS Spotify SDK).",
 
   "Technical Skills": "Технические скиллы",
 
@@ -46,11 +41,10 @@
   "interest6": "Написание IT статей",
   "interest7": "Чтение хоррор манги",
 
-
   "handmade": "Сайт написан: ",
   "author":"Евгением Рожковым",
   "myEmail": "Почта для связи: ",
   "pochta":"EuKovs@gmail.com",
   "myTelegram": "Мой Телеграм ",
   "telegramLink":"T.me/Kovs705"
- }
+}

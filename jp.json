@@ -1,36 +1,30 @@
 {
-    "iOS Developer": "iOS エンジニア",
+  "iOS Developer": "iOS エンジニア",
   "name": "ロジコブ ユジン",
-  "location": "東京・西武新宿線",
+  "location": "日本、東京都、中野区",
   "email": "EuKovs@gmail.com",
   "github": "https://github.com/kovs705",
 
-  
   "lifetimeExp": "2024年1月 - 現在 | ",
   "lifetimeName": "Lifetime Health Plus Care Pvt Ltd | ",
-  "lifetimePositionName": "iOS App Developer",
+  "lifetimePositionName": "iOS エンジニア",
   "lifetime": "インドの医療スタートアップ組織のためのiOSアプリを開発、最適化、リリースしました。",
 
-  "reshenieExperience": "2023年夏 - 現在 | ",
-  "reshenieName":"Reshenie, llc. |",
-  "resheniePositionName":" iOS App Developer",
-  "reshenie": "私は医療組織向けにいくつかのKMPプロジェクトを開発し、SwiftUIとUIKitを使用して最適化しました。開発プロセス中には、私はKotlinを学び、一般的なコーディングルールを確立するためにSwiftLintを実装し、マージコンフリクトを避けるためにXcodeGenを使用しました。",
+  "reshenieExperience": "2023年夏 - 2024年春 | ",
+  "reshenieName": "Reshenie, llc. | ",
+  "resheniePositionName": "iOS エンジニア",
+  "reshenie": "ロシアの医療組織向けにいくつかのKMPプロジェクトを開発しました。最初はiPadOS用の検眼士向けアプリ、次に患者の個人キャビネットアプリです。",
 
-  "interExp":"2022年春 - 2022年秋 | ",
-  "interName":"個人起業家 | ",
-  "interPositionName":"Contract iOS エンジニア",
-  "inter":"個人の企業家向けのロジスティクスセクターでの荷物の運輸状況を制御するためのアプリケーションを現代化しました。SwiftUIのコンポーネントをUIKitアプリケーションに実装しました。小規模なビジネスがPCなしで部分的な機能をスマートフォンに移行するのを助けました。",
-
-  "openExp":"2023年夏 | ",
-  "openName":"Open-Source Spotify client app | ",
-  "openPositionName":"iOS エンジニア",
-  "open":"アプリケーションの技術的な面を管理し、Spotifyとの連携のためのアプリケーションのバックエンド部分の開発を担当しました。これは主なアプリケーション（iOS Spotify SDKではない）に関係なく行いました。",
+  "interExp": "2022年春 - 2022年秋 | ",
+  "interName": "個人起業家 | ",
+  "interPositionName": "契約iOSエンジニア",
+  "inter": "個人の企業家向けのロジスティクスセクターでの荷物の運輸状況を制御するためのアプリケーションを現代化しました。SwiftUIのコンポーネントをUIKitアプリケーションに実装しました。小規模なビジネスがPCなしで部分的な機能をスマートフォンに移行するのを助けました。",
 
   "Technical Skills": "技術的なスキル",
-  
-  "Natural Languages":"自然言語",
+
+  "Natural Languages": "自然言語",
   "language1": "ロシア語",
-  "language2": "英語", 
+  "language2": "英語",
   "language3": "日本語",
   "language4": "フィンランド語",
   "level1": "母語",
@@ -47,11 +41,10 @@
   "interest6": "IT記事の作成",
   "interest7": "ホラーマンガの読書",
 
-
   "handmade": "手作りによる",
-  "author":"ロジコブ ユジン",
+  "author": "ロジコブ ユジン",
   "myEmail": "Email: ",
-  "pochta":"EuKovs@gmail.com",
+  "pochta": "EuKovs@gmail.com",
   "myTelegram": "My Telegram ",
-  "telegramLink":"T.me/Kovs705"
- }
+  "telegramLink": "T.me/Kovs705"
+}

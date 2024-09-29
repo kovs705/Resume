@@ -1,29 +1,24 @@
 {
     "iOS Developer": "iOS Developer",
     "name": "Eugene Rozhkov",
-    "location": "Tokyo, Seibu Shinjuku Line",
+    "location": "Nakano City, Tokyo, Japan",
     "email": "EuKovs@gmail.com",
     "github": "https://github.com/kovs705",
 
     "lifetimeExp":"January 2024 - Present | ",
     "lifetimeName":"Lifetime Health Plus Care Pvt Ltd | ",
-    "lifetimePositionName":"iOS App Developer",
-    "lifetime":"Developed, optimized and released iOS app for medical startup organization in India.",
+    "lifetimePositionName":"iOS Developer",
+    "lifetime":"Developed and released iOS app for medical startup organization in India.",
   
-    "reshenieExperience": "Summer 2023 - Present | ",
+    "reshenieExperience": "Summer 2023 - Spring 2024 | ",
     "reshenieName":"Reshenie, llc. | ",
-    "resheniePositionName":"iOS App Developer",
+    "resheniePositionName":"iOS Developer",
     "reshenie": "Developed several KMP projects for medical organizations in Russia. First - app for Optometrists on iPadOS. The second - Personal Cabinet for patients.",
   
     "interExp":"Spring 2022 - Fall 2022 | ",
     "interName":"Individual Entrepreneur | ",
     "interPositionName":"Contract iOS Developer",
     "inter":"Modernized an application for individual entrepreneurs in the logistics sector, designed for controlling the status of cargo transportation. Implemented SwiftUI components into a UIKit application. Helped a small business transfer part of the functionality from a computer to a phone.",
-  
-    "openExp":"Summer 2023 | ",
-    "openName":"Open-Source Spotify client app | ",
-    "openPositionName":"iOS Developer",
-    "open":"Managed the technical aspects of the application, including the development of the backend part of the application for working with Spotify, regardless of the main application (not iOS Spotify SDK).",
 
     "Technical Skills": "Technical Skills",
   

@@ -1,175 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" type="text/css" href="design.css">
-   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-   <script>
-    function fetchLanguageFile(lang) {
-        return fetch(`${lang}.json`)
-            .then(response => response.json())
-            .catch(error => console.error('Error:', error));
-    }
+    <script>
+        function fetchLanguageFile(lang) {
+            return fetch(`${lang}.json`)
+                .then(response => response.json())
+                .catch(error => console.error('Error:', error));
+        }
 
-    function newChangeLanguage(lang) {
-        fetchLanguageFile(lang).then(languages => {
-            var elements = document.querySelectorAll('[data-lang]');
-            elements.forEach(function(element) {
-                var key = element.getAttribute('data-lang');
-                var text = languages[key];
-                element.textContent = text;
+        function newChangeLanguage(lang) {
+            fetchLanguageFile(lang).then(languages => {
+                var elements = document.querySelectorAll('[data-lang]');
+                elements.forEach(function(element) {
+                    var key = element.getAttribute('data-lang');
+                    var text = languages[key];
+                    element.textContent = text;
+                });
             });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var lang = navigator.language || navigator.userLanguage;
+            newChangeLanguage(lang);
         });
-    }
+    </script>
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var lang = navigator.language || navigator.userLanguage;
-        newChangeLanguage(lang);
-    });
-   </script>
-
-   <style>
+    <style>
         p, em {
             display: inline-block;
+        }
+        .language-buttons {
+            margin-top: 10px;
+        }
+        .language-buttons button {
+            margin-right: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-   <div class="wrapper clearfix">
-       <div class="left">
-           <div class="name-hero">
-               <div class="me-img"></div>
-               <div class="name-text">
-                  <h1 data-lang="name">Eugene <em>Rozhkov</em></h1>
-                  <p data-lang="location">Tokyo, Seibu Shinjuku Line</p>
-                  <p data-lang="email">EuKovs@gmail.com</p>
-                  <p data-lang="github">https://github.com/kovs705</p>
-               <button onclick="newChangeLanguage('en')">English</button>
-               <button onclick="newChangeLanguage('ru')">Russian</button>
-               <button onclick="newChangeLanguage('jp')">Japanese</button>
-               </div>
-           </div>
-       </div>
-       <div class="right">
-           <div class="inner">
-               <section>
-                  <h1 data-lang="iOS Developer">iOS Developer</h1>
+<div class="wrapper clearfix">
+    <div class="left">
+        <div class="name-hero">
+            <div class="me-img"></div>
+            <div class="name-text">
+                <h1 data-lang="name">Eugene <em>Rozhkov</em></h1>
+                <p data-lang="location">Nakano, Tokyo, Japan</p>
+                <p data-lang="email">EuKovs@gmail.com</p>
+                <p data-lang="github">https://github.com/kovs705</p>
+                <div class="language-buttons">
+                    <button onclick="newChangeLanguage('en')">English</button>
+                    <button onclick="newChangeLanguage('ru')">Russian</button>
+                    <button onclick="newChangeLanguage('jp')">Japanese</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="inner">
+            <section>
+                <h1 data-lang="iOS Developer">iOS Developer</h1>
 
-                  <div class="grid-container">
+                <div class="grid-container">
                     <p data-lang="lifetimeExp">January 2024 - Present | </p>
                     <em data-lang="lifetimeName">Lifetime Health Plus Care Pvt Ltd | </em>
                     <em data-lang="lifetimePositionName">iOS App Developer</em>
                     <p data-lang="lifetime">Developed, optimized and released iOS app for medical startup organization in India.</p>
                     <hr class="dotted">
-                  </div>
+                </div>
 
-                  <div class="grid-container">
+                <div class="grid-container">
                     <p data-lang="reshenieExperience">Summer 2023 - Present | </p>
                     <em data-lang="reshenieName">Reshenie, llc. </em>
                     <em data-lang="resheniePositionName">iOS App Developer</em>
                     <p data-lang="reshenie">Developed several KMP projects for medical organizations in Russia. First - app for Optometrists on iPadOS. The second - Personal Cabinet for patients.</p>
                     <hr class="dotted">
-                  </div>
+                </div>
 
-                  <div class="grid-container">
+                <div class="grid-container">
                     <p data-lang="interExp">Spring 2022 - Fall 2022 | </p>
                     <em data-lang="interName">Individual Entrepreneur | </em>
                     <em data-lang="interPositionName">Contract iOS Developer</em>
                     <p data-lang="inter">Led the modernization of a proprietary application for individual entrepreneurs, focusing on transport status management in the logistics sector. Delivered SwiftUI components into UIKit app. Helped small businesses run their operations without needing a PC</p>
                     <hr class="dotted">
-                  </div>
+                </div>
 
-                  <div class="grid-container">
-                    <p data-lang="openExp">Summer 2023 | </p>
-                    <em data-lang="openName">Open-Source Spotify client app | </em>
-                    <em data-lang="openPositionName">Lead iOS Developer</em>
-                    <p data-lang="open">Managed all technical aspects, including the maintenance and development of the backend to function independently from Spotify, without using iOS Spotify SDK.</p>
-                    <hr class="dotted">
-                  </div>
+                <section>
 
-               <section>
+                    <!-- Mobile apps section -->
+                    <h1>Mobile apps</h1>
+                    <ul class="app-list">
+                        <li><a href="AmbienceIndex.html">App 1</a></li>
+                        <!-- Add more apps as needed! -->
+                    </ul>
+                    <!-- End of mobile section -->
 
-                   <!-- Mobile apps section -->
-                   <h1>Mobile apps</h1>
-                   <ul class="app-list">
-                       <li><a href="AmbienceIndex.html">App 1</a></li>
-                       <!-- Add more apps as needed! -->
-                   </ul>
-                   <!-- End of mobile section -->
-
-                  <h1 data-lang="Technical Skills">Technical Skills</h1>
-                  <ul class="skill-set">
-                      <li>iOS Development (UIKit, SwiftUI)</li>
-                      <li>Kotlin Multiplatform</li>
-                      <li>MVP, MVI, MVVM</li>
-                      <li>Combine / StateFlow</li>
-                      <li>Kotlin</li>
-                      <li>Minimum viable product</li>
-                      <li>AppleScript</li>
-                      <li>XCodeGen</li>
-                      <li>Complex UI components</li>
-                      <li>HIG / Material Design 3</li>
-                      <li>ViewController / MainActivity</li>
-                  </ul>
-               </section>
-               <section>
-                  <h1 data-lang="Natural Languages">Natural Languages</h1>
-                  <div class="grid-container">
-                    <p data-lang="language1">Russian</p>
-                    <em data-lang="level1">Native</em>
-                   </div>
-
-                  <div class="grid-container">
-                    <p data-lang="language2">English</p>
-                    <em data-lang="level2">Advanced</em>
-                   </div>
-
-                  <div class="grid-container">
-                    <p data-lang="language3">Japanese</p>
-                    <em data-lang="level3">Intermediate</em>
-                   </div>
-
-                   <div class="grid-container">
-                    <p data-lang="language4">Russian</p>
-                    <em data-lang="level4">Beginner</em>
-                   </div>
-               </section>
-               <section>
-                  <h1 data-lang="Personal Interests">Personal Interests</h1>
-                  <ul class="skill-set">
-                    <li data-lang="interest1"><a href="https://en.wikipedia.org/wiki/Guitar">Guitar</a></li>
-                    <li data-lang="interest2"><a href="https://en.wikipedia.org/wiki/Bass_guitar">Bass guitar</a></li>
-                    <li data-lang="interest3"><a href="https://en.wikipedia.org/wiki/Piano">Piano</a></li>
-                    <li data-lang="interest4"><a href="https://en.wikipedia.org/wiki/Songwriting">Song Writing</a></li>
-                    <li data-lang="interest5"><a href="https://en.wikipedia.org/wiki/Personal_app_projects">Personal app projects</a></li>
-                    <li data-lang="interest6"><a href="https://en.wikipedia.org/wiki/Natural_language">Natural languages</a></li>
-                    <li data-lang="interest7"><a href="https://en.wikipedia.org/wiki/IT">Writing IT articles</a></li>
-                   </ul>
-               </section>
-               <section>
-                  <div class="handmade">
+                    <h1 data-lang="Technical Skills">Technical Skills</h1>
+                    <ul class="skill-set">
+                        <li>iOS Development (UIKit, SwiftUI)</li>
+                        <li>Kotlin Multiplatform</li>
+                        <li>MVP, MVI, MVVM</li>
+                        <li>Combine / StateFlow</li>
+                        <li>Kotlin</li>
+                        <li>Minimum viable product</li>
+                        <li>AppleScript</li>
+                        <li>XCodeGen</li>
+                        <li>Complex UI components</li>
+                        <li>HIG / Material Design 3</li>
+                        <li>ViewController / MainActivity</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 data-lang="Natural Languages">Natural Languages</h1>
                     <div class="grid-container">
-                        <p data-lang="handmade">handmade by </p>
-                        <em data-lang="author">Eugene Rozhkov</em>
+                        <p data-lang="language1">Russian</p>
+                        <em data-lang="level1">Native</em>
                     </div>
 
                     <div class="grid-container">
-                        <p data-lang="myEmail">Email: </p>
-                        <em data-lang="pochta">EuKovs@gmail.com</em>
+                        <p data-lang="language2">English</p>
+                        <em data-lang="level2">Advanced</em>
                     </div>
 
                     <div class="grid-container">
-                        <p data-lang="myTelegram">My Telegram </p>
-                        <em data-lang="telegramLink">T.me/Kovs705</em>
+                        <p data-lang="language3">Japanese</p>
+                        <em data-lang="level3">Intermediate</em>
                     </div>
-                  </div>
-               </section>
-           </div>
-       </div>
-   </div>
 
-   <script src="script.js"></script>
- </body>
- </html>
+                    <div class="grid-container">
+                        <p data-lang="language4">Russian</p>
+                        <em data-lang="level4">Beginner</em>
+                    </div>
+                </section>
+                <section>
+                    <h1 data-lang="Personal Interests">Personal Interests</h1>
+                    <ul class="skill-set">
+                        <li data-lang="interest1"><a href="https://en.wikipedia.org/wiki/Guitar">Guitar</a></li>
+                        <li data-lang="interest2"><a href="https://en.wikipedia.org/wiki/Bass_guitar">Bass guitar</a></li>
+                        <li data-lang="interest3"><a href="https://en.wikipedia.org/wiki/Piano">Piano</a></li>
+                        <li data-lang="interest4"><a href="https://en.wikipedia.org/wiki/Songwriting">Song Writing</a></li>
+                        <li data-lang="interest5"><a href="https://en.wikipedia.org/wiki/Personal_app_projects">Personal app projects</a></li>
+                        <li data-lang="interest6"><a href="https://en.wikipedia.org/wiki/Natural_language">Natural languages</a></li>
+                        <li data-lang="interest7"><a href="https://en.wikipedia.org/wiki/IT">Writing IT articles</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="handmade">
+                        <div class="grid-container">
+                            <p data-lang="handmade">handmade by </p>
+                            <em data-lang="author">Eugene Rozhkov</em>
+                        </div>
+
+                        <div class="grid-container">
+                            <p data-lang="myEmail">Email: </p>
+                            <em data-lang="pochta">EuKovs@gmail.com</em>
+                        </div>
+
+                        <div class="grid-container">
+                            <p data-lang="myTelegram">My Telegram </p>
+                            <em data-lang="telegramLink">T.me/Kovs705</em>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
