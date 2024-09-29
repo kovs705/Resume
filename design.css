@@ -16,6 +16,21 @@
       line-height:1.4;
       text-rendering:optimizeLegibility;
   }
+
+  .app-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .app-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+  }
+
+  .app-list li span {
+    margin-left: 5px; /* Adjust spacing between text and emoji */
+  }
   
   .skill-set li:hover
   {
