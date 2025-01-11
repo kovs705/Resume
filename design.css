@@ -1,237 +1,338 @@
-*, *:before, *:after {
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-   }
-  
-  html
-  {
-      font-size:100%;
-  }
-  
-  body {
-      -webkit-font-smoothing:antialiased;
-      color:#333332;
-      font-family: Lora, normal;
-      font-size:18px;
-      font-weight:400;
-      line-height:1.4;
-      text-rendering:optimizeLegibility;
-  }
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ddd;
+    background: radial-gradient(circle at bottom, navy 0, black 100%);
+    overflow-x: hidden;
+    height: 100%;
+}
 
-  .app-list {
-    list-style-type: none;
-    padding: 0;
-  }
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff79c6;
+}
 
-  .app-list li {
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+header .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px; /* Adjust spacing as needed */
-  }
+}
 
-  .app-list li span {
-    margin-left: 5px; /* Adjust spacing between text and emoji */
-  }
-  
-  .skill-set li:hover
-  {
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-  }
-  
-  h1
-  {
-      color:rgba(0,0,0,.75);
-  }
-  
-  .wrapper
-  {
-      height:100%;
-  }
-  
-  .left
-  {
-      background-color:rgba(0,0,0,.025);
-      border-right:1px solid rgba(0,0,0,.05);
-      float:right;
-      height:100%;
-      margin-left:-1px;
-      min-width:256px;
-      position:fixed;
-      width:33.33%;
-    
-  }
-  
-  .right
-  {
-      float:right;
-      height:100%;
-      position:relative;
-      width:66.66%;
-  }
-  
-  
-  .name-hero
-  {
-      background:rgba(0,0,0,.001);
-      bottom:0;
-      height:290px;
-      left:0;
-      margin:auto;
-      position:absolute;
-      right:0;
-      top:0;
-      width:85%;
-  }
-  
-  .me-img {
-      background:url(https://media-exp1.licdn.com/dms/image/C4E03AQGnLq_IB_mf8Q/profile-displayphoto-shrink_400_400/0/1631022739752?e=1648684800&v=beta&t=eICUjHeH_g9GQEItmEMK1j2gCADwqfjrlccSD_5za58) no-repeat center center ;
-      background-size:100%;
-    background-position:0px;
-      border-radius:100%;
-      height:150px;
-      margin:0 auto;
-      position:relative;
-      width:150px;
-  }
-  
-  .name-hero h1
-  {
-      font-family:Open Sans, sans-serif;
-      font-size:1.5em;
-      text-align:center;
-  }
-  
-  .name-hero h1 em
-  {
-      color:rgba(0,0,0,.3);
-      font-style:normal;
-      font-weight:700;
-  }
-  
-  .name-hero p
-  {
-      color:rgba(0,0,0,.75);
-      font-size:.75em;
-      line-height:1.5;
-      margin:0 8px 0 0;
-      text-align:center;
-  }
-  
-  .name-hero .name-text
-  {
-      margin:0 auto;
-      width:85%;
-  }
-  
-  .inner
-  {
-      margin:0 auto;
-      max-width:975px;
-      padding:3em;
-  }
-  
-  .inner h1
-  {
-      font-size:1.75em;
-  }
-  
-  .inner p
-  {
-      color:rgba(0,0,0,.5);
-  }
-  
-  .inner p em
-  {
-      color:rgba(0,0,0,1);
-      font-style:normal;
-  }
-  
-  .inner section {
-      margin:100px auto;
-  }
-  
-  ul {
-      list-style-type:none;
-      margin-top:-10px;
-      max-width:570px;
-      padding:0;
-  }
-  
-  .skill-set li {
-      background:rgba(0,0,0,.75);
-      border-radius:10px;
-      color:#FFF;
-      display:inline-block;
-      list-style:none;
-      margin:15px 15px 0 0;
-      padding:10px;
-      text-align:center;
-      text-decoration: none;
-      pointer-events: auto;
-  }
+header .logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
 
-  .skill-set li a {
-    text-decoration: none !important;
-    display: block;
-    width: 100%;
-    height: 100%;
-    pointer-events: auto;
-  }
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden; /* Prevent overflow */
+}
 
-  .skill-set li[data-lang] a {
-    text-decoration: none !important;
-    display: block;
-    width: 100%;
-    height: 100%;
-    pointer-events: auto;
-  }
-  
-  @media screen and (max-width: 48em) {
-      .right,.left
-      {
-          float:none;
-      position:relative !important;
-          width:100%;
-      min-height:500px;
-      }
-    .handmade {
-    text-align:center !important;
-    margin-top:0px !important;
-  }
-  
-  @media screen and (max-width: 75em) {
-      body
-  { font-size:16px;}
-  }
-  
-  @media screen and (max-width: 60em) {
-      body { font-size:14px; }
-  }
+header nav ul li {
+    margin: 0 10px;
+}
 
-  .clearfix:after {
-     content: " "; /* Older browser do not support empty content */
-     visibility: hidden;
-     display: block;
-     height: 0;
-     clear: both;
-  }
+header nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 15px;  /* Add padding to make sure links stay within bounds */
+    transition: color 0.3s;
+}
 
-  .handmade {
-    text-align:right;
-    margin-top:100px;
-  }
+header nav ul li a:hover {
+    color: #ff79c6;
+}
 
-  em[data-lang] {
-    font-family: 'Shadows Into Light', normal;
-  }
+/* Button Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
 
-  .handmade em {
-    font-family: 'Shadows Into Light', normal;
+/* Base Button Styling */
+.shine-btn {
+    background-color: #ff79c6;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;  /* Rounded edges */
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden; /* Ensure the shine doesn't go outside the button */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for all hover effects */
+}
+
+/* Shine Effect on Hover */
+.shine-btn:hover {
+    transform: translateY(-5px); /* Slight hover effect to make it feel like the button is lifting */
+    box-shadow: 0 0 20px #ff79c6, 0 0 40px #0080FF;  /* Stronger glow */
+}
+
+/* Add the Shine Animation Effect */
+.shine-btn::before {
+    content: "";
+    position: absolute;
+    top: -200%;
+    left: -200%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, rgba(255, 121, 198, 0.6), rgba(255, 255, 255, 0.2), rgba(255, 121, 198, 0.6));
+    z-index: 1;
+}
+
+/* Button Text Styling to Layer Above the Shine */
+.shine-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Timeline */
+.timeline {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.timeline-item {
+    margin: 20px 0;
+}
+
+.timeline-item h3 {
+    color: #50fa7b;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Projects */
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin: 10px 0;
+}
+
+.project-list a {
+    color: #50fa7b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-list a:hover {
+    color: #ff79c6;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly wider grid items */
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    color: #fff; /* Ensuring text stands out on dark background */
+}
+
+.skill-item {
+    background-color: rgba(255, 121, 198, 0.1); /* Soft pinkish background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: space-between;
+    position: relative;
+}
+
+.skill-item i {
+    font-size: 2em; /* Icon size */
+    margin-bottom: 10px;
+    color: #ff79c6; /* Purple color for icons */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.skill-item:hover i {
+    color: #50fa7b;
+}
+
+.skill-content {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.skill-item h3 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.skill-item:hover h3 {
+    color: #50fa7b;
+}
+
+.skill-item p {
+    font-size: 1em;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+.skill-item:hover {
+    transform: translateY(-7px); /* Hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 121, 198, 0.2); /* Darker hover background */
+}
+
+/* Add smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #111;
+    color: #111;
+    position: relative; /* This allows for absolute positioning of the silhouette */
+}
+
+/* House Silhouette above the footer */
+.house-silhouette {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+}
+
+footer p {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.25em;
     margin-left:5px;
-  }
+    color: aliceblue;
+}
 
-  /* Dotted border */
-  hr.dotted {
-    border-top: 3px dotted #bbb;
-  }
+footer .house-silhouette svg {
+    fill: #111;
+}
+
+.space {
+    background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+    border: 1px dashed purple;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.stars1, .stars2, .stars3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.stars1 {
+    animation: space 180s ease-in-out infinite;
+    background-image:
+            radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+
+.stars2 {
+    animation: space 240s ease-in-out infinite;
+    background-image:
+            radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+
+.stars3 {
+    animation: space 300s ease-in-out infinite;
+    background-image:
+            radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)),
+            radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+
+@keyframes space {
+    40% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    60% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
